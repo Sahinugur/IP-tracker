@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <!-- Leaflet.js files-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <title>IP Checker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+           <h1 class="header">IP Address Tracker</h1>
+           <form class="searchBar">
+               <input type="text" id="enteredIp" class="input-form" placeholder="Search for any IP address or domain">
+               <button id="searchBtn" class="arrowBtn">
+                   <img src="./images/icon-arrow.svg" alt="arrow icon">
+               </button>
+           </form>
+        </div>
+    </div>
+    <div class="data">
+        <div class="data-box">
+            <div class="currentData firstCurrData">
+                <h4 class="title">IP Adress</h4>
+                <span id="updatedIp" class="result">192.212.174.101</span>
+            </div>
+
+            <div class="currentData">
+                <h4 class="title">Location</h4>
+                <span id="updatedLocation" class="result">Brooklyn, NY 10001</span>
+            </div>
+
+            <div class="currentData">
+                <h4 class="title">Timezone</h4>
+                <span id="updatedTimezone" class="result timezone">UTC -05:00</span>
+            </div>
+
+            <div class="currentData">
+                <h4 class="title">ISP</h4>
+                <span id="updatedISP" class="result">SpaceX Starlink</span>
+            </div>
+        </div>
+        <div id="mapID" class="map-box"></div>
+    </div>
+
+
+    <script src="../src/tracker.ts"></script>
+ 
+</body>
+</html>

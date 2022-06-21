@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.form {
+  background-image: url("/images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+}
+
+h1.header {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.searchBar {
+  position: relative;
+  width: 500px;
+  margin: auto;
+}
+
+.input-form {
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+
+.input-form:focus {
+  outline: none;
+}
+
+.arrowBtn {
+  padding: 23px;
+  background-color: hsl(0, 0%, 17%);
+  border-radius: 0 10px 10px 0;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  right: 2px;
+}
+
+.data-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  width: 85%;
+  margin: -5rem auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 10rem;
+  position: relative;
+  z-index: 1000;
+}
+
+.currentData {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-left: 1px solid;
+  border-color: hsl(0, 0%, 59%);
+  height: 60px;
+  display: flex;
+  padding: 0 15px;
+  margin-right: 10rem;
+}
+
+.firstCurrData {
+  border-left: none;
+}
+.title {
+  text-transform: uppercase;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+span {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.timezone {
+  width: 200px;
+}
+
+.map-box {
+  margin-top: -5rem;
+  height: 42.5rem;
+}
